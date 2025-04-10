@@ -5,7 +5,7 @@
 ![](https://www.akaipro.com/assets/images/pdp/midi-mix/midimix_ortho_1200x750_web.jpg_c85a5d661225028785319086bc4e547c.jpg)
 
 ## The Problem
-It's a question as old as time. Ever just wanted to plug in your AKAI MIDIMix and have it work as a mixer with FL Studio only to find it is not officially supported and you spend hours browsing online for scripts and manually linking 50 controls and it still isn't working as well as you had hoped so by the time you wanna work on music you are all burned out and wanna hit the bar 30 minutes before close and see how many beer/shot combos you can dump in your body so you feel numb enough to go home and buy a copy of Abelton Live so you can use your controller in a DAW you are unfamilier with? I know I have.
+It's a question as old as time. Ever just wanted to plug in your AKAI MIDIMix and have it work as a mixer with FL Studio only to find it is not officially supported and you spend hours browsing online for scripts and manually linking 50 controls and it still isn't working as well as you had hoped so by the time you wanna work on music you are all burned out and wanna hit the bar 30 minutes before close and see how many beer/shot combos you can dump in your body so you feel numb enough to go home and buy a copy of Abelton Live so you can use your controller in a DAW you are unfamiliar with? I know I have.
 
 > Do I look like I know what Python is? I just want a god dang mixer controller. -- Hank Hill
 
