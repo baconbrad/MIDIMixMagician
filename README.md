@@ -24,9 +24,9 @@ This project is a fork and partial rewrite of [Akai Midimix Reimagined](https://
 ### Features / Enhancements
 
 - Already mapped out and ready to go control of 64 tracks all broken down to 8 mixer groups of 8 tracks
-- Instant control of 3 band Gain EQ, 3 Band Frequency EQ, Panning, and Stereo seperation
+- Instant control of 3 band Gain EQ, 3 Band Frequency EQ, Panning, and Stereo separation
 - Mute, solo, and record arming modes
-- Send All to send all hardward settings to your current mixer group
+- Send All to send all hardware settings to your current mixer group
 - "Controller mode" from Reimagined was removed but you have 8 CC assignable knobs to anything you want in FL Studio or plugins
 - Automatic track focus in FL Studio based off the control you are using
 - Reimagines LED bugs are resolved and their on and off states reflect their usage better in Mute/Solo/Arm modes
