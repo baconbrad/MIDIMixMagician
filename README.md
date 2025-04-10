@@ -11,7 +11,7 @@ It's a question as old as time. Ever just wanted to plug in your AKAI MIDIMix an
 
 ## The Solution
 
-Well now there is an answer. This is a Shutterstock photo of a local magician I found on Craigslist. He said I can convert his whole essense and entrap his soul into a Python script forever so he can do the hard part for us.
+Well now there is an answer. This is a Shutterstock photo of a local magician I found on Craigslist. He said I can convert his whole essence and entrap his soul into a Python script forever so he can do the hard part for us.
 
 ![](https://www.shutterstock.com/image-photo/magician-bowler-hat-above-his-260nw-1276255153.jpg)
 
@@ -19,7 +19,7 @@ His name is Ted. And before this he had no meaningful purpose and was looking fo
 
 ## The Real Talk
 
-This project is a fork and partial rewrite of [Akai Midimix Reimagined](https://forum.image-line.com/viewtopic.php?t=266822) by [natraj](https://support.image-line.com/action/profile/public?fu=1068) realeased in 2021. So big credit to him on doing some of the initial groundwork and heavy lifting. But I always thought it felt more of a proof of concept rather than a production script that AKAI would have shipped with. I have done bug fixes, optimizations, and quality of life improvements where it not only simplifies things but it makes it a pretty darn good dedicated controller for FL Studio's mixer.
+This project is a fork and partial rewrite of [Akai Midimix Reimagined](https://forum.image-line.com/viewtopic.php?t=266822) by [natraj](https://support.image-line.com/action/profile/public?fu=1068) resleased in 2021. So big credit to him on doing some of the initial groundwork and heavy lifting. But I always thought it felt more of a proof of concept rather than a production script that AKAI would have shipped with. I have done bug fixes, optimizations, and quality of life improvements where it not only simplifies things but it makes it a pretty darn good dedicated controller for FL Studio's mixer.
 
 ### Features / Enhancements
 
