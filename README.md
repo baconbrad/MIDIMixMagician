@@ -54,7 +54,7 @@ The UI work flow doesn't 100% match the labeling on the AKAI MIDIMix. But is inc
 - Button "Solo" goes into solo mode
 	- All mute buttons will light as muted except the track you are soloing
 	- The first row of knobs control panning over 8 tracks
-	- The second row of knobs control stereo seperation over 8 tracks
+	- The second row of knobs control stereo separation over 8 tracks
 	- The third row of knobs can be used as linkable MIDI CC knobs
 	- The CC numbers from left to right are 70-77 but can be changed in the script
  - Sliders 1-8 control the tracks on the current mixer group and the master slider the master track
