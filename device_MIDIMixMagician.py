@@ -1,5 +1,5 @@
 # name=AKAI MIDIMix Magician
-# version=1.0
+# version=1.1
 # github=https://github.com/baconbrad/MIDIMixMagician
 
 import midi
@@ -9,6 +9,7 @@ import general
 
 # Change values to change default behavior
 VolCeiling = 0.8    # Maximum volume level for track volume control (0.8: 0.0 dB, 1: +5.6 dB)
+MastVolCeiling = 1  # Maximum volume level for master volume control (0.8: 0.0 dB, 1: +5.6 dB)
 MIDIPort = 1        # Port to send the customized CC knobs from
 ActiveTab = 0       # Active tab (0: EQ Gain/Mute, 1: EQ Freq/Arm 2: Pan and CC/Solo)
 MixerPage = 0       # Default mixer page (0: Tracks 1-8, 1: Tracks 9-16, etc)
@@ -335,7 +336,7 @@ def OnMidiMsg(event):
         else:
             if event.data1 == 62:
                 mixer.setTrackNumber(0)
-                mixer.setTrackVolume(0, event.data2/127)
+                mixer.setTrackVolume(0, MastVolCeiling * event.data2/127)
             elif event.data1 in CCs:
                 idx = CCs.index(event.data1)
                 row = idx % 4
