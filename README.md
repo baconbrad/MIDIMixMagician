@@ -50,7 +50,8 @@ The UI work flow doesn't 100% match the labeling on the AKAI MIDIMix. But is inc
 	- The mute buttons will be yellow if the track is muted
 - Button "Bank Right" goes into rec arm mode
 	- All the knobs control 3 band Frequency EQs over 8 tracks
-	- The mute buttons will be yellow if the track is armed
+	- The mute buttons will be flashing yellow if the track is armed
+	- Mute buttons will go solid yellow when transport is running
 - Button "Solo" goes into solo mode
 	- All mute buttons will light as muted except the track you are soloing
 	- The first row of knobs control panning over 8 tracks
