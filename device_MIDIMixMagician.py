@@ -1,11 +1,13 @@
 # name=AKAI MIDIMix Magician
-# version=1.1
+# version=1.2
 # github=https://github.com/baconbrad/MIDIMixMagician
 
 import midi
 import device
 import mixer
 import general
+import time
+import transport
 
 # Change values to change default behavior
 VolCeiling = 0.8    # Maximum volume level for track volume control (0.8: 0.0 dB, 1: +5.6 dB)
@@ -21,6 +23,9 @@ Debug = True        # Print to script output
 btnMute = False     # Button Bank Left state
 btnArm = False      # Button Bank Right state
 btnSolo = False     # Button Solo state
+blinkState = False  # Current state of blinking LEDs
+lastBlink = 0       # Timestamp of last blink       
+blinkInt = 0.5      # Blink interval for idle state
 BTN_MUTE = 0x19     # MIDI note for Bank Left
 BTN_ARM = 0x1A      # MIDI note for Bank Right
 BTN_SOLO = 0x1B     # MIDI note for Solo
@@ -220,6 +225,36 @@ def toggleProps(a):
                 LED_Off( channel2note(a) )     
             else: 
                 LED_On( channel2note(a) )
+
+def OnIdle():
+    """
+    OnIdle function tracking the blinking LEDs for arm mode
+    """
+    global blinkState, lastBlink
+
+    if ActiveTab == 1:
+        if transport.isPlaying():
+            # Show solid lights while playing
+            for a in range(1, 9):
+                track = a + (MixerPage * 8)
+                if mixer.isTrackArmed(track):
+                    LED_On(channel2note(a))
+                else:
+                    LED_Off(channel2note(a))
+        else:
+            # Blink armed tracks while not playing
+            currentBlink = time.time()
+            if currentBlink - lastBlink >= blinkInt:
+                blinkState = not blinkState
+                lastBlink = currentBlink
+
+                for a in range(1, 9):
+                    track = a + (MixerPage * 8)
+                    if mixer.isTrackArmed(track):
+                        if blinkState:
+                            LED_On(channel2note(a))
+                        else:
+                            LED_Off(channel2note(a))               
 
 def OnInit():
     """
